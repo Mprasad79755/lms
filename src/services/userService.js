@@ -1,17 +1,5 @@
 import sampleUsers from "../data/sampleUsers.json";
 
-/**
- * USER MODULE SERVICE
- * 
- * NOTE FOR FUTURE BACKEND INTEGRATION:
- * Currently, user validation is relaxed as requested (librarians can enter any userId directly).
- * Sample users are provided for convenient search and autocompletion.
- * 
- * When your backend User Module is ready:
- * 1. Replace getUsers() with: return fetch('/api/users').then(res => res.json())
- * 2. Connect findUserById() to your User Module endpoint: fetch(`/api/users/${id}`)
- */
-
 const STORAGE_KEY = "library_users";
 
 export const getUsers = () => {
@@ -21,7 +9,8 @@ export const getUsers = () => {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(sampleUsers));
       return sampleUsers;
     }
-    return JSON.parse(stored);
+    const parsed = JSON.parse(stored);
+    return Array.isArray(parsed) && parsed.length > 0 ? parsed : sampleUsers;
   } catch (error) {
     console.error("Failed to load users from storage:", error);
     return sampleUsers;
@@ -34,7 +23,7 @@ export const searchUsers = (query) => {
   if (!q) return users;
 
   return users.filter((user) =>
-    [user.id, user.name, user.email, user.department, user.role].some((val) =>
+    [user.id, user.name, user.email, user.department, user.role, user.phone].some((val) =>
       String(val || "").toLowerCase().includes(q)
     )
   );

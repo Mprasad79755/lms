@@ -2,49 +2,451 @@
   {
     "id": "USR-1001",
     "name": "Aarav Patel",
-    "email": "aarav.patel@example.com",
-    "department": "Computer Science",
+    "email": "aarav.patel@library.in",
+    "department": "Computer Science & Engineering",
     "role": "Student",
-    "phone": "+91 98765 43210"
+    "phone": "+91 98201 11001",
+    "joinedDate": "2024-08-10"
   },
   {
     "id": "USR-1002",
     "name": "Priya Sharma",
-    "email": "priya.sharma@example.com",
-    "department": "Electronics & Comm.",
+    "email": "priya.sharma@library.in",
+    "department": "Electronics & Communication",
     "role": "Student",
-    "phone": "+91 98765 43211"
+    "phone": "+91 98201 11002",
+    "joinedDate": "2024-08-12"
   },
   {
     "id": "USR-1003",
     "name": "Rohan Mehta",
-    "email": "rohan.mehta@example.com",
+    "email": "rohan.mehta@library.in",
     "department": "Mechanical Engineering",
     "role": "Student",
-    "phone": "+91 98765 43212"
+    "phone": "+91 98201 11003",
+    "joinedDate": "2024-08-15"
   },
   {
     "id": "USR-1004",
     "name": "Prof. Ananya Iyer",
-    "email": "ananya.iyer@example.com",
+    "email": "ananya.iyer@library.in",
     "department": "Information Technology",
     "role": "Faculty",
-    "phone": "+91 98765 43213"
+    "phone": "+91 98201 11004",
+    "joinedDate": "2020-06-01"
   },
   {
     "id": "USR-1005",
     "name": "Sneha Reddy",
-    "email": "sneha.reddy@example.com",
-    "department": "Data Science",
+    "email": "sneha.reddy@library.in",
+    "department": "Data Science & AI",
     "role": "Research Scholar",
-    "phone": "+91 98765 43214"
+    "phone": "+91 98201 11005",
+    "joinedDate": "2023-01-15"
   },
   {
     "id": "USR-1006",
     "name": "Kavita Verma",
-    "email": "kavita.verma@example.com",
+    "email": "kavita.verma@library.in",
     "department": "Civil Engineering",
     "role": "Student",
-    "phone": "+91 98765 43215"
+    "phone": "+91 98201 11006",
+    "joinedDate": "2025-01-10"
+  },
+  {
+    "id": "USR-1007",
+    "name": "Rajesh Kumar",
+    "email": "rajesh.kumar@library.in",
+    "department": "Electrical Engineering",
+    "role": "Faculty",
+    "phone": "+91 98201 11007",
+    "joinedDate": "2019-07-20"
+  },
+  {
+    "id": "USR-1008",
+    "name": "Sunita Rao",
+    "email": "sunita.rao@library.in",
+    "department": "Biotechnology",
+    "role": "Research Scholar",
+    "phone": "+91 98201 11008",
+    "joinedDate": "2023-08-25"
+  },
+  {
+    "id": "USR-1009",
+    "name": "Vikram Malhotra",
+    "email": "vikram.malhotra@library.in",
+    "department": "Management Studies (MBA)",
+    "role": "Student",
+    "phone": "+91 98201 11009",
+    "joinedDate": "2025-07-15"
+  },
+  {
+    "id": "USR-1010",
+    "name": "Neha Joshi",
+    "email": "neha.joshi@library.in",
+    "department": "Computer Science & Engineering",
+    "role": "Student",
+    "phone": "+91 98201 11010",
+    "joinedDate": "2024-09-01"
+  },
+  {
+    "id": "USR-1011",
+    "name": "Dr. Karthik Swaminathan",
+    "email": "karthik.s@library.in",
+    "department": "Physics",
+    "role": "Faculty",
+    "phone": "+91 98201 11011",
+    "joinedDate": "2018-03-12"
+  },
+  {
+    "id": "USR-1012",
+    "name": "Divya Nambiar",
+    "email": "divya.nambiar@library.in",
+    "department": "Chemical Engineering",
+    "role": "Student",
+    "phone": "+91 98201 11012",
+    "joinedDate": "2024-08-18"
+  },
+  {
+    "id": "USR-1013",
+    "name": "Rahul Deshmukh",
+    "email": "rahul.deshmukh@library.in",
+    "department": "Mechanical Engineering",
+    "role": "Student",
+    "phone": "+91 98201 11013",
+    "joinedDate": "2023-08-10"
+  },
+  {
+    "id": "USR-1014",
+    "name": "Pooja Hegde",
+    "email": "pooja.hegde@library.in",
+    "department": "Architecture & Design",
+    "role": "Student",
+    "phone": "+91 98201 11014",
+    "joinedDate": "2024-01-20"
+  },
+  {
+    "id": "USR-1015",
+    "name": "Arjun Kapoor",
+    "email": "arjun.kapoor@library.in",
+    "department": "Management Studies (MBA)",
+    "role": "Student",
+    "phone": "+91 98201 11015",
+    "joinedDate": "2025-02-01"
+  },
+  {
+    "id": "USR-1016",
+    "name": "Dr. Meera Nair",
+    "email": "meera.nair@library.in",
+    "department": "Mathematics",
+    "role": "Faculty",
+    "phone": "+91 98201 11016",
+    "joinedDate": "2017-11-05"
+  },
+  {
+    "id": "USR-1017",
+    "name": "Deepak Choudhury",
+    "email": "deepak.c@library.in",
+    "department": "Civil Engineering",
+    "role": "Research Scholar",
+    "phone": "+91 98201 11017",
+    "joinedDate": "2022-09-14"
+  },
+  {
+    "id": "USR-1018",
+    "name": "Ritu Sen",
+    "email": "ritu.sen@library.in",
+    "department": "Humanities & Social Sciences",
+    "role": "Student",
+    "phone": "+91 98201 11018",
+    "joinedDate": "2024-08-20"
+  },
+  {
+    "id": "USR-1019",
+    "name": "Sanjay Mukherjee",
+    "email": "sanjay.m@library.in",
+    "department": "Computer Science & Engineering",
+    "role": "Faculty",
+    "phone": "+91 98201 11019",
+    "joinedDate": "2016-08-01"
+  },
+  {
+    "id": "USR-1020",
+    "name": "Shreya Ghoshal",
+    "email": "shreya.ghoshal@library.in",
+    "department": "Biotechnology",
+    "role": "Student",
+    "phone": "+91 98201 11020",
+    "joinedDate": "2024-08-22"
+  },
+  {
+    "id": "USR-1021",
+    "name": "Suresh Menon",
+    "email": "suresh.menon@library.in",
+    "department": "Electrical Engineering",
+    "role": "Staff",
+    "phone": "+91 98201 11021",
+    "joinedDate": "2015-04-10"
+  },
+  {
+    "id": "USR-1022",
+    "name": "Kavita Pillai",
+    "email": "kavita.pillai@library.in",
+    "department": "Information Technology",
+    "role": "Student",
+    "phone": "+91 98201 11022",
+    "joinedDate": "2023-08-11"
+  },
+  {
+    "id": "USR-1023",
+    "name": "Nikhil Bansal",
+    "email": "nikhil.bansal@library.in",
+    "department": "Data Science & AI",
+    "role": "Student",
+    "phone": "+91 98201 11023",
+    "joinedDate": "2024-08-10"
+  },
+  {
+    "id": "USR-1024",
+    "name": "Tanvi Kulkarni",
+    "email": "tanvi.k@library.in",
+    "department": "Electronics & Communication",
+    "role": "Research Scholar",
+    "phone": "+91 98201 11024",
+    "joinedDate": "2023-02-18"
+  },
+  {
+    "id": "USR-1025",
+    "name": "Aditya Singhania",
+    "email": "aditya.s@library.in",
+    "department": "Management Studies (MBA)",
+    "role": "Student",
+    "phone": "+91 98201 11025",
+    "joinedDate": "2025-01-08"
+  },
+  {
+    "id": "USR-1026",
+    "name": "Prof. Swati Bhattacharya",
+    "email": "swati.b@library.in",
+    "department": "Chemistry",
+    "role": "Faculty",
+    "phone": "+91 98201 11026",
+    "joinedDate": "2018-09-01"
+  },
+  {
+    "id": "USR-1027",
+    "name": "Harish Sundaram",
+    "email": "harish.s@library.in",
+    "department": "Mechanical Engineering",
+    "role": "Student",
+    "phone": "+91 98201 11027",
+    "joinedDate": "2024-08-16"
+  },
+  {
+    "id": "USR-1028",
+    "name": "Pallavi Goswami",
+    "email": "pallavi.g@library.in",
+    "department": "Computer Science & Engineering",
+    "role": "Student",
+    "phone": "+91 98201 11028",
+    "joinedDate": "2024-08-14"
+  },
+  {
+    "id": "USR-1029",
+    "name": "Gaurav Tripathi",
+    "email": "gaurav.t@library.in",
+    "department": "Civil Engineering",
+    "role": "Student",
+    "phone": "+91 98201 11029",
+    "joinedDate": "2023-08-10"
+  },
+  {
+    "id": "USR-1030",
+    "name": "Dr. Archana Ranganathan",
+    "email": "archana.r@library.in",
+    "department": "Biotechnology",
+    "role": "Faculty",
+    "phone": "+91 98201 11030",
+    "joinedDate": "2019-12-01"
+  },
+  {
+    "id": "USR-1031",
+    "name": "Manish Saxena",
+    "email": "manish.saxena@library.in",
+    "department": "Electrical Engineering",
+    "role": "Student",
+    "phone": "+91 98201 11031",
+    "joinedDate": "2024-08-15"
+  },
+  {
+    "id": "USR-1032",
+    "name": "Shruti Chatterjee",
+    "email": "shruti.c@library.in",
+    "department": "Information Technology",
+    "role": "Student",
+    "phone": "+91 98201 11032",
+    "joinedDate": "2024-08-12"
+  },
+  {
+    "id": "USR-1033",
+    "name": "Pranav Dixit",
+    "email": "pranav.dixit@library.in",
+    "department": "Data Science & AI",
+    "role": "Research Scholar",
+    "phone": "+91 98201 11033",
+    "joinedDate": "2022-11-20"
+  },
+  {
+    "id": "USR-1034",
+    "name": "Ishita Roy",
+    "email": "ishita.roy@library.in",
+    "department": "Architecture & Design",
+    "role": "Student",
+    "phone": "+91 98201 11034",
+    "joinedDate": "2023-08-05"
+  },
+  {
+    "id": "USR-1035",
+    "name": "Varun Dhawan",
+    "email": "varun.dhawan@library.in",
+    "department": "Management Studies (MBA)",
+    "role": "Student",
+    "phone": "+91 98201 11035",
+    "joinedDate": "2025-08-01"
+  },
+  {
+    "id": "USR-1036",
+    "name": "Preeti Sengupta",
+    "email": "preeti.s@library.in",
+    "department": "Physics",
+    "role": "Student",
+    "phone": "+91 98201 11036",
+    "joinedDate": "2024-08-11"
+  },
+  {
+    "id": "USR-1037",
+    "name": "Alok Tiwari",
+    "email": "alok.tiwari@library.in",
+    "department": "Mechanical Engineering",
+    "role": "Staff",
+    "phone": "+91 98201 11037",
+    "joinedDate": "2016-05-15"
+  },
+  {
+    "id": "USR-1038",
+    "name": "Ruchi Aggarwal",
+    "email": "ruchi.a@library.in",
+    "department": "Computer Science & Engineering",
+    "role": "Student",
+    "phone": "+91 98201 11038",
+    "joinedDate": "2024-08-19"
+  },
+  {
+    "id": "USR-1039",
+    "name": "Sandeep Patil",
+    "email": "sandeep.patil@library.in",
+    "department": "Civil Engineering",
+    "role": "Faculty",
+    "phone": "+91 98201 11039",
+    "joinedDate": "2020-01-10"
+  },
+  {
+    "id": "USR-1040",
+    "name": "Shalini Mishra",
+    "email": "shalini.mishra@library.in",
+    "department": "Humanities & Social Sciences",
+    "role": "Research Scholar",
+    "phone": "+91 98201 11040",
+    "joinedDate": "2023-07-12"
+  },
+  {
+    "id": "USR-1041",
+    "name": "Vijay Deverakonda",
+    "email": "vijay.d@library.in",
+    "department": "Electronics & Communication",
+    "role": "Student",
+    "phone": "+91 98201 11041",
+    "joinedDate": "2024-08-14"
+  },
+  {
+    "id": "USR-1042",
+    "name": "Anjali Chandran",
+    "email": "anjali.c@library.in",
+    "department": "Chemical Engineering",
+    "role": "Student",
+    "phone": "+91 98201 11042",
+    "joinedDate": "2024-08-15"
+  },
+  {
+    "id": "USR-1043",
+    "name": "Rakesh Jhunjhunwala",
+    "email": "rakesh.j@library.in",
+    "department": "Management Studies (MBA)",
+    "role": "Student",
+    "phone": "+91 98201 11043",
+    "joinedDate": "2025-06-15"
+  },
+  {
+    "id": "USR-1044",
+    "name": "Deepa Karmakar",
+    "email": "deepa.k@library.in",
+    "department": "Physical Education",
+    "role": "Staff",
+    "phone": "+91 98201 11044",
+    "joinedDate": "2021-02-10"
+  },
+  {
+    "id": "USR-1045",
+    "name": "Chetan Bhagat",
+    "email": "chetan.b@library.in",
+    "department": "Mechanical Engineering",
+    "role": "Research Scholar",
+    "phone": "+91 98201 11045",
+    "joinedDate": "2022-08-01"
+  },
+  {
+    "id": "USR-1046",
+    "name": "Dr. Nandita Das",
+    "email": "nandita.das@library.in",
+    "department": "Humanities & Social Sciences",
+    "role": "Faculty",
+    "phone": "+91 98201 11046",
+    "joinedDate": "2017-04-18"
+  },
+  {
+    "id": "USR-1047",
+    "name": "Rohit Shetty",
+    "email": "rohit.shetty@library.in",
+    "department": "Information Technology",
+    "role": "Student",
+    "phone": "+91 98201 11047",
+    "joinedDate": "2024-08-17"
+  },
+  {
+    "id": "USR-1048",
+    "name": "Madhuri Dixit",
+    "email": "madhuri.d@library.in",
+    "department": "Mathematics",
+    "role": "Student",
+    "phone": "+91 98201 11048",
+    "joinedDate": "2023-08-12"
+  },
+  {
+    "id": "USR-1049",
+    "name": "Sourav Ganguly",
+    "email": "sourav.g@library.in",
+    "department": "Management Studies (MBA)",
+    "role": "Student",
+    "phone": "+91 98201 11049",
+    "joinedDate": "2024-08-10"
+  },
+  {
+    "id": "USR-1050",
+    "name": "Saina Nehwal",
+    "email": "saina.nehwal@library.in",
+    "department": "Biotechnology",
+    "role": "Student",
+    "phone": "+91 98201 11050",
+    "joinedDate": "2024-08-13"
   }
 ]

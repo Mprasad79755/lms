@@ -38,6 +38,9 @@ const ProtectedLayout = () => {
             <NavLink to="/return-book" className="app-nav-link">
               Return Book
             </NavLink>
+            <NavLink to="/users" className="app-nav-link">
+              Members
+            </NavLink>
             <NavLink to="/settings" className="app-nav-link">
               Settings
             </NavLink>

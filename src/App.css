@@ -698,3 +698,21 @@ textarea.form-control {
     font-size: 2.4rem;
   }
 }
+
+/* Interactive Utility Classes */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.transition-all {
+  transition: all 0.2s ease-in-out;
+}
+
+.hover-shadow {
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(22, 34, 51, 0.08);
+}

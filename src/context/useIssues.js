@@ -14,5 +14,7 @@ export const useIssues = () => {
     books: context.books,
     getIssuesForBook: context.getIssuesForBook,
     getIssuesForUser: context.getIssuesForUser,
+    generateFakeTransactions: context.generateFakeTransactions,
+    clearIssues: context.clearIssues,
   };
 };

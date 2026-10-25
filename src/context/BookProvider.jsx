@@ -2,6 +2,11 @@ import { useCallback, useMemo, useState } from "react";
 import BookContext from "./bookContext";
 import sampleBooks from "../data/sampleBooks.json";
 import sampleIssues from "../data/sampleIssues.json";
+import sampleUsers from "../data/sampleUsers.json";
+import {
+  generateDemoTransactions,
+  syncBooksStockWithIssues,
+} from "../services/circulationService";
 
 const normalizeBook = (book, activeIssuesCount = 0) => {
   const qty = Number(book.quantity) > 0 ? Number(book.quantity) : 1;
@@ -327,6 +332,63 @@ export const BookProvider = ({ children }) => {
     [issues]
   );
 
+  /**
+   * GENERATE FAKE / DEMO TRANSACTIONS
+   * Creates a rich batch of 50 realistic issued, overdue, and returned records.
+   * Automatically synchronizes each book's total and available copies.
+   */
+  const generateFakeTransactions = useCallback(
+    (customUsers = [], count = 50) => {
+      const targetBooks = books.length > 0 ? books : sampleBooks;
+      const targetUsers = customUsers.length > 0 ? customUsers : sampleUsers;
+
+      const newTransactions = generateDemoTransactions(targetBooks, targetUsers, count);
+      const updatedBooks = syncBooksStockWithIssues(targetBooks, newTransactions);
+
+      persistBooks(updatedBooks);
+      persistIssues(newTransactions);
+
+      const todayStr = new Date().toISOString().split("T")[0];
+      const active = newTransactions.filter((t) => t.status === "Issued").length;
+      const overdue = newTransactions.filter(
+        (t) => t.status === "Issued" && t.dueDate && t.dueDate < todayStr
+      ).length;
+      const returned = newTransactions.filter((t) => t.status === "Returned").length;
+
+      return {
+        total: newTransactions.length,
+        active,
+        overdue,
+        returned,
+      };
+    },
+    [books, persistBooks, persistIssues]
+  );
+
+  /**
+   * CLEAR ALL TRANSACTIONS
+   * Removes all loan issues and resets availableCopies back to totalCopies for all books.
+   */
+  const clearIssues = useCallback(() => {
+    const restoredBooks = books.map((b) => {
+      const total =
+        b.totalCopies !== undefined
+          ? Math.max(1, Number(b.totalCopies))
+          : Math.max(1, Number(b.quantity) || 1);
+      return {
+        ...b,
+        totalCopies: total,
+        availableCopies: total,
+        quantity: total,
+        status: "Available",
+      };
+    });
+
+    persistBooks(restoredBooks);
+    persistIssues([]);
+    return true;
+  }, [books, persistBooks, persistIssues]);
+
   const value = useMemo(
     () => ({
       books,
@@ -339,6 +401,8 @@ export const BookProvider = ({ children }) => {
       returnBook,
       getIssuesForBook,
       getIssuesForUser,
+      generateFakeTransactions,
+      clearIssues,
     }),
     [
       books,
@@ -351,6 +415,8 @@ export const BookProvider = ({ children }) => {
       returnBook,
       getIssuesForBook,
       getIssuesForUser,
+      generateFakeTransactions,
+      clearIssues,
     ]
   );
 

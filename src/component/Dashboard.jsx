@@ -214,7 +214,12 @@ const Dashboard = () => {
                         return (
                           <tr key={issue.id}>
                             <td className="book-title-cell ps-4">
-                              <span className="fw-semibold text-dark d-block text-truncate" style={{ maxWidth: 170 }}>
+                              <span
+                                className="fw-semibold text-dark d-block text-truncate"
+                                style={{ maxWidth: 170, cursor: "pointer" }}
+                                onClick={() => navigate(`/books/${issue.bookId}`)}
+                                title="Click to view book trends & details"
+                              >
                                 {issue.bookTitle}
                               </span>
                               <span className="text-secondary small font-monospace">
@@ -314,7 +319,12 @@ const Dashboard = () => {
                         return (
                           <tr key={book.id ?? `${book.title}-${index}`}>
                             <td className="book-title-cell ps-4">
-                              <span className="fw-semibold text-dark d-block text-truncate" style={{ maxWidth: 170 }}>
+                              <span
+                                className="fw-semibold text-dark d-block text-truncate"
+                                style={{ maxWidth: 170, cursor: "pointer" }}
+                                onClick={() => navigate(`/books/${book.id}`)}
+                                title="Click to view book details & trends"
+                              >
                                 {book.title || book.name || "Untitled book"}
                               </span>
                               <span className="text-secondary small">
@@ -334,16 +344,26 @@ const Dashboard = () => {
                               </span>
                             </td>
                             <td className="pe-4 text-end">
-                              <button
-                                type="button"
-                                className="btn btn-sm btn-outline-primary py-1 px-2"
-                                disabled={avail <= 0}
-                                onClick={() => navigate(`/issue-book?bookId=${book.id}`)}
-                                title={avail > 0 ? "Issue this book" : "Out of stock"}
-                              >
-                                <i className="bi bi-journal-arrow-up me-1" />
-                                Issue
-                              </button>
+                              <div className="d-flex justify-content-end gap-1">
+                                <button
+                                  type="button"
+                                  className="btn btn-sm btn-outline-secondary py-1 px-2"
+                                  title="View trends & details"
+                                  onClick={() => navigate(`/books/${book.id}`)}
+                                >
+                                  <i className="bi bi-eye" />
+                                </button>
+                                <button
+                                  type="button"
+                                  className="btn btn-sm btn-outline-primary py-1 px-2"
+                                  disabled={avail <= 0}
+                                  onClick={() => navigate(`/issue-book?bookId=${book.id}`)}
+                                  title={avail > 0 ? "Issue this book" : "Out of stock"}
+                                >
+                                  <i className="bi bi-journal-arrow-up me-1" />
+                                  Issue
+                                </button>
+                              </div>
                             </td>
                           </tr>
                         );

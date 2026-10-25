@@ -206,7 +206,7 @@ const Books = () => {
           </p>
           <h2 className="fw-bold mb-2">All Books</h2>
           <p className="text-secondary mb-0">
-            Search, organize, edit, and track copy availability for your collection.
+            Search, organize, edit, and track copy availability and circulation trends.
           </p>
         </div>
 
@@ -384,7 +384,9 @@ const Books = () => {
                     <div className="d-flex justify-content-between align-items-start gap-2 mb-3">
                       <div
                         className="rounded-3 bg-primary-subtle text-primary d-flex align-items-center justify-content-center flex-shrink-0"
-                        style={{ width: 52, height: 52 }}
+                        style={{ width: 52, height: 52, cursor: "pointer" }}
+                        onClick={() => navigate(`/books/${book.id}`)}
+                        title="Click to view details & circulation trends"
                       >
                         <i className="bi bi-book-half fs-3" />
                       </div>
@@ -408,9 +410,13 @@ const Books = () => {
 
                     <h5
                       className="fw-bold text-dark mb-2"
-                      style={{ overflowWrap: "anywhere" }}
+                      style={{ overflowWrap: "anywhere", cursor: "pointer" }}
+                      onClick={() => navigate(`/books/${book.id}`)}
+                      title="Click to view full details and trends"
                     >
-                      {book.title || book.name || "Untitled Book"}
+                      <span className="text-dark text-decoration-none">
+                        {book.title || book.name || "Untitled Book"}
+                      </span>
                     </h5>
 
                     <p className="text-secondary mb-3">
@@ -461,9 +467,20 @@ const Books = () => {
                         </span>
                       </div>
 
-                      <div className="d-flex gap-2">
+                      <div className="d-flex flex-wrap gap-1">
                         <button
-                          className="btn btn-primary btn-sm px-3"
+                          type="button"
+                          className="btn btn-outline-secondary btn-sm"
+                          title="View circulation trends and active loans"
+                          onClick={() => navigate(`/books/${book.id}`)}
+                        >
+                          <i className="bi bi-eye me-1" />
+                          Details
+                        </button>
+
+                        <button
+                          type="button"
+                          className="btn btn-primary btn-sm px-2"
                           title={avail > 0 ? "Issue this book" : "Out of stock"}
                           disabled={avail <= 0}
                           onClick={() => navigate(`/issue-book?bookId=${book.id}`)}
@@ -473,7 +490,8 @@ const Books = () => {
                         </button>
 
                         <button
-                          className="btn btn-outline-primary btn-sm"
+                          type="button"
+                          className="btn btn-outline-primary btn-sm px-2"
                           title="Edit book"
                           aria-label={`Edit ${book.title || book.name}`}
                           onClick={() => {
@@ -491,18 +509,17 @@ const Books = () => {
                             setEditErrors({});
                           }}
                         >
-                          <i className="bi bi-pencil-square me-1" />
-                          Edit
+                          <i className="bi bi-pencil-square" />
                         </button>
 
                         <button
-                          className="btn btn-outline-danger btn-sm"
+                          type="button"
+                          className="btn btn-outline-danger btn-sm px-2"
                           title="Delete book"
                           aria-label={`Delete ${book.title || book.name}`}
                           onClick={() => setDeleteBook(book)}
                         >
-                          <i className="bi bi-trash me-1" />
-                          Delete
+                          <i className="bi bi-trash" />
                         </button>
                       </div>
                     </div>
