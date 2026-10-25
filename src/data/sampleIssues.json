@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ISS-1001",
+    "bookId": "sample-1",
+    "bookTitle": "Programming in ANSI C",
+    "bookAuthor": "E. Balagurusamy",
+    "bookIsbn": "",
+    "userId": "USR-1001",
+    "userName": "Aarav Patel",
+    "issueDate": "2026-10-10",
+    "dueDate": "2026-10-24",
+    "returnDate": null,
+    "status": "Issued",
+    "remarks": "Course textbook - semester 1",
+    "createdAt": "2026-10-10T10:30:00.000Z"
+  },
+  {
+    "id": "ISS-1002",
+    "bookId": "sample-3",
+    "bookTitle": "Let Us C",
+    "bookAuthor": "Yashavant Kanetkar",
+    "bookIsbn": "",
+    "userId": "USR-1002",
+    "userName": "Priya Sharma",
+    "issueDate": "2026-10-20",
+    "dueDate": "2026-11-03",
+    "returnDate": null,
+    "status": "Issued",
+    "remarks": "Lab assignment reference",
+    "createdAt": "2026-10-20T14:15:00.000Z"
+  },
+  {
+    "id": "ISS-1003",
+    "bookId": "sample-4",
+    "bookTitle": "Data Structures Using C",
+    "bookAuthor": "Reema Thareja",
+    "bookIsbn": "",
+    "userId": "USR-1003",
+    "userName": "Rohan Mehta",
+    "issueDate": "2026-10-01",
+    "dueDate": "2026-10-15",
+    "returnDate": "2026-10-14T11:20:00.000Z",
+    "status": "Returned",
+    "remarks": "Returned in good condition",
+    "createdAt": "2026-10-01T09:00:00.000Z"
+  }
+]

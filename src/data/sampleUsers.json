@@ -1,0 +1,50 @@
+[
+  {
+    "id": "USR-1001",
+    "name": "Aarav Patel",
+    "email": "aarav.patel@example.com",
+    "department": "Computer Science",
+    "role": "Student",
+    "phone": "+91 98765 43210"
+  },
+  {
+    "id": "USR-1002",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@example.com",
+    "department": "Electronics & Comm.",
+    "role": "Student",
+    "phone": "+91 98765 43211"
+  },
+  {
+    "id": "USR-1003",
+    "name": "Rohan Mehta",
+    "email": "rohan.mehta@example.com",
+    "department": "Mechanical Engineering",
+    "role": "Student",
+    "phone": "+91 98765 43212"
+  },
+  {
+    "id": "USR-1004",
+    "name": "Prof. Ananya Iyer",
+    "email": "ananya.iyer@example.com",
+    "department": "Information Technology",
+    "role": "Faculty",
+    "phone": "+91 98765 43213"
+  },
+  {
+    "id": "USR-1005",
+    "name": "Sneha Reddy",
+    "email": "sneha.reddy@example.com",
+    "department": "Data Science",
+    "role": "Research Scholar",
+    "phone": "+91 98765 43214"
+  },
+  {
+    "id": "USR-1006",
+    "name": "Kavita Verma",
+    "email": "kavita.verma@example.com",
+    "department": "Civil Engineering",
+    "role": "Student",
+    "phone": "+91 98765 43215"
+  }
+]
